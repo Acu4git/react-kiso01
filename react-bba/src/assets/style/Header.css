@@ -1,0 +1,20 @@
+header {
+  width: 100%;
+  height: 130px;
+  background-color: #66d48b;
+  color: #ffffff;
+  text-align: center;
+}
+
+.page-title {
+  float: left;
+  font-size: 40px;
+  padding-top: 45px;
+  padding-left: 50px;
+}
+
+.header-right {
+  float: right;
+  padding-top: 70px;
+  padding-right: 30px;
+}
