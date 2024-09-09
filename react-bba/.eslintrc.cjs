@@ -4,6 +4,8 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
     "prettier",
   ],
@@ -15,5 +17,11 @@ module.exports = {
       "warn",
       { allowConstantExport: true },
     ],
+  },
+  parserOptions: {
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: ["./tsconfig.json", "./tsconfig.node.json", "./tsconfig.app.json"],
+    tsconfigRootDir: __dirname,
   },
 };

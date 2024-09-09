@@ -8,9 +8,9 @@ const baseUrl: string = 'https://railway.bulletinboard.techtrain.dev'
 const App = () => {
   return (
     <>
-      <Header/>
+      <Header />
       <Threads baseUrl={baseUrl} />
-      <Footer/>
+      <Footer />
     </>
   )
 }
