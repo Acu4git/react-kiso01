@@ -28,6 +28,7 @@
       "@style/*": ["src/assets/style/*"],
       "@image/*": ["src/assets/image/*"],
       "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
     }
   },
   "include": ["src"]
