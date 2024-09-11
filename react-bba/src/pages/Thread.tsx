@@ -6,19 +6,15 @@ import {
   CardHeader,
   Container,
   Flex,
-  FormControl,
   ListItem,
-  Stack,
   Text,
   Textarea,
   UnorderedList,
-  useFormErrorStyles,
   VStack,
 } from "@chakra-ui/react";
 import Footer from "@components/Footer";
 import Header from "@components/Header";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { form } from "framer-motion/client";
 import { useForm } from "react-hook-form";
 import { useParams } from "react-router-dom";
 import { z } from "zod";
@@ -90,7 +86,7 @@ const Thread = () => {
     <>
       <Header />
       <Flex bgColor={"whitesmoke"}>
-        <Container p={0} m={0} h="100vh">
+        <Container p={0} m={0} h="100vh" overflow={"scroll"}>
           <UnorderedList styleType={"none"}>
             {posts.map((post: Post) => (
               <ListItem>
